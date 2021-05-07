@@ -1,0 +1,50 @@
+<div class="container">
+  <div class="row"><h1 class="text-center">Weather Data</h1></div>
+  <br>
+  <div class="row">
+    <div class="col-md-2">
+      <button class="btn btn-primary" (click)="getWeatherData('Lochwinnoch')" [routerLink]="['weather']">Lochwinnoch
+      </button>
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary" (click)="getWeatherData('Londesborough')" [routerLink]="['weather']">Londesborough
+      </button>
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary" (click)="getWeatherData('Loftus')" [routerLink]="['weather']">Loftus
+      </button>
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary" (click)="getWeatherData('Lockington')" [routerLink]="['weather']">Lockington
+      </button>
+    </div>
+    <div class="col-md-2">
+      <button class="btn btn-primary" (click)="getWeatherData('Lockerbie')" [routerLink]="['weather']">Lockerbie
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- <router-outlet></router-outlet> -->
+
+<h3 class="text-center my-4 ">Weather Details:</h3>
+<p class="text-center">
+  Current weather conditions: {{this.weatherData?.main.temp}}
+</p>
+<p class="text-center">
+  Temperature in Degrees Celsius: {{this.weatherData?.main.sea_level}}
+</p>
+<!-- <p class="text-center">
+  Temperature in Degrees Farenheit: {{this.weatherData?.current.temp_f}}
+</p>
+<p class="text-center">
+  Feels like in Degrees Celsius: {{this.weatherData?.current.feelslike_c}}
+</p>
+<p class="text-center">
+  Feels like in Degrees Farenheit:
+  {{this.weatherData?.current.feelslike_f}}
+</p>
+<p class="text-center">
+  Location Searched: {{this.weatherData?.location.name}},
+  {{this.weatherData?.location.country}}
+</p> -->
